@@ -16,7 +16,6 @@ import java.util.Set;
         })
 })
 public class User {
-
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "user_id")
@@ -87,7 +86,7 @@ public class User {
     }
 
     public void setId(Integer id) {
-        this.user_id = user_id;
+        this.user_id = id;
     }
 
     public String getUsername() {
