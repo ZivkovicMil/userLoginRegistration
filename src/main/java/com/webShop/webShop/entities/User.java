@@ -52,6 +52,8 @@ public class User {
     @OneToOne(mappedBy = "user", fetch = FetchType.LAZY, cascade = CascadeType.REMOVE)
     private ConfirmationToken confirmationToken;
 
+
+
     @OneToOne(mappedBy = "user", fetch = FetchType.LAZY, cascade = CascadeType.REMOVE)
     private ChangePasswordToken changePasswordToken;
 
